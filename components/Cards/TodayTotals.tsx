@@ -126,8 +126,8 @@ const TodayTotals = () => {
         </div>
       </div>
       {/* map remaining cards */}
-      {data.map((item) => (
-        <div className={` ${nunito.className} bg-white rounded-xl px-3.5 py-3`}>
+      {data.map((item, index) => (
+        <div key={index} className={` ${nunito.className} bg-white rounded-xl px-3.5 py-3`}>
           <div className="flex flex-col rounded-xl  h-full bg-[#F6FAFF] px-6 pt-4 pb-6 ">
             <div className="mb-[1.125rem] flex items-center justify-between gap-2">
               <h2 className="text-sm font-medium text-[#4F64A7]">
@@ -152,8 +152,8 @@ const TodayTotals = () => {
               </button>
             </div>
             <div className="mt-auto grid grid-cols-2 gap-x-2 gap-y-4">
-              {item.metrics.map((item) => (
-                <p>
+              {item.metrics.map((item, index) => (
+                <p key={index}>
                   <span className="mb-1.5 block text-xs text-[#4F64A7]">
                     {item.label}
                   </span>

@@ -41,8 +41,8 @@ const data = [
 export const MoreTotals = () => {
   return (
     <>
-      {data.map((item) => (
-        <div className={` ${sora.className} bg-white rounded-xl px-3.5 py-3`}>
+      {data.map((item, index) => (
+        <div key={index} className={` ${sora.className} bg-white rounded-xl px-3.5 py-3`}>
           <div className="flex flex-col rounded-xl  h-full bg-[#F6FAFF] px-6 pt-4 pb-6 ">
             <div className="mb-[1.125rem] flex items-center justify-between gap-2">
               <h2 className="text-sm font-medium text-[#4F64A7]">
