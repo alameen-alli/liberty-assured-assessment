@@ -3,6 +3,10 @@ import DashboardLayout from "./(admin)/layouts/layout";
 import { WalletBalance } from "@/components/Cards/WalletBalance";
 import { ViewTotals } from "@/components/Cards/ViewTotals";
 import { MoreTotals } from "@/components/Cards/MoreTotals";
+import TodayTotals from "@/components/Cards/TodayTotals";
+import DoughnutCard from "@/components/Cards/DoughnutCard";
+import TransactionChart from "@/components/Cards/TransactionCharts";
+import LineChart from "@/components/Cards/LineChart";
 
 const Adminpage = () => {
   return (
@@ -12,6 +16,9 @@ const Adminpage = () => {
         <ViewTotals />
         <MoreTotals />
         <TodayTotals />
+        <DoughnutCard />
+        <LineChart />
+        <div className="h-[5rem] md:h-[18rem] w-full"></div>
       </div>
     </DashboardLayout>
   );

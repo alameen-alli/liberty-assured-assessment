@@ -90,7 +90,10 @@ export default function DashboardLayout({
             </div>
           </div>
         </header>
-        <main className="md:m-7  p-5 md:p-0 overflow-y-auto h-full">
+        <main
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          className="md:mx-7 p-5 md:p-0 md:py-5 overflow-y-auto h-full"
+        >
           {children}
         </main>
       </div>
