@@ -21,7 +21,7 @@ const data = [
     ],
   },
   {
-    title: "Total commission",
+    title: "Average commission per transaction",
     dropdown: "Today",
     metrics: [
       { label: "POS commission", value: "₦87,000" },
