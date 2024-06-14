@@ -13,7 +13,7 @@ export const NavBar = () => {
       <nav
         className={`${montserrat.className} flex gap-3 text-lg justify-between items-center bg-[#032282] top-0 left-0 w-full z-10 md:hidden p-4`}
       >
-        <p className="shrink truncate">Analytics dashboard</p>
+        <p className="shrink truncate  text-white">Analytics dashboard</p>
         <button
           onClick={() => setIsModalOpen(true)}
           type="button"
